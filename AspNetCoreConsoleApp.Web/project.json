@@ -1,0 +1,27 @@
+{
+  "content": ["Views"],
+  
+  "version": "1.0.0-*",
+  "buildOptions": {
+     "warningsAsErrors": true,
+     "emitEntryPoint": true,
+     "preserveCompilationContext": true
+  },
+  
+  "dependencies": {
+    "AspNetCoreConsoleApp.Repositories": "1.0.0-*",
+    "Microsoft.AspNetCore.Diagnostics": "1.0.0-rc2-*",
+    "Microsoft.AspNetCore.Server.Kestrel": "1.0.0-rc2-*",
+    "Microsoft.AspNetCore.Mvc": "1.0.0-rc2-*",
+    "Microsoft.AspNetCore.StaticFiles": "1.0.0-rc2-*"
+  },
+
+  "frameworks": {
+    "dnxcore50": { }
+  },
+  
+  "runtimes":{ 
+    "win10-arm": { },
+    "win10-x64": { }
+  }
+}

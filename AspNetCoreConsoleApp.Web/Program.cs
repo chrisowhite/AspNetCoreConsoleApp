@@ -9,7 +9,9 @@ namespace AspNetCoreConsoleApp.Web
         {
             var app = new WebHostBuilder()
                 .UseKestrel()
+                .UseUrls("http://*:5000/")
                 .UseContentRoot(Directory.GetCurrentDirectory())
+                .UseEnvironment("Development")
                 .UseStartup<Startup>()
                 .Build();
                 
