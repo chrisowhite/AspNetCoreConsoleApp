@@ -4,13 +4,8 @@ using Microsoft.EntityFrameworkCore;
 namespace AspNetCoreConsoleApp.Repositories
 {
     public class TestContext : DbContext
-    {
-        public TestContext() 
-        {
-            
-        }
-        
-        public TestContext(DbContextOptions options) : base(options)
+    {        
+        public TestContext(DbContextOptions<TestContext> options) : base(options)
         {
             
         }

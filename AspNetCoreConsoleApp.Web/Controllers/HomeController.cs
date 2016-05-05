@@ -15,7 +15,8 @@ namespace AspNetCoreConsoleApp.Web.Controllers
         [HttpGet("/")]
         public IActionResult Index() 
         {
-            return View();
+            var users = repository.GetUsers();
+            return View(model: users);
         }
     }
 }

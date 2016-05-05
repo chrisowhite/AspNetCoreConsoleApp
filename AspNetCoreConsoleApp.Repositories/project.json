@@ -6,7 +6,7 @@
   "dependencies": {
     "AspNetCoreConsoleApp.Contracts.Entities": "1.0.0-*",
     "AspNetCoreConsoleApp.Contracts.Repositories": "1.0.0-*",
-    "Microsoft.EntityFrameworkCore.InMemory": "1.0.0-*",
+    "Microsoft.EntityFrameworkCore": "1.0.0-*",
     "NETStandard.Library": "1.5.0-*"
   },
   "frameworks": {

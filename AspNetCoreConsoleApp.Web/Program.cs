@@ -7,13 +7,15 @@ namespace AspNetCoreConsoleApp.Web
     {
         public static void Main(string[] args)
         {
+            // Set up hosting.
             var app = new WebHostBuilder()
+                .UseContentRoot(Directory.GetCurrentDirectory())
                 .UseKestrel()
                 .UseUrls("http://*:5000/")
-                .UseContentRoot(Directory.GetCurrentDirectory())
                 .UseStartup<Startup>()
                 .Build();
-                
+            
+            // Run that shit!!!
             app.Run();
         }
     }
