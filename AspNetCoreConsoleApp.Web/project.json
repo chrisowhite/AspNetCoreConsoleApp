@@ -5,23 +5,30 @@
   "buildOptions": {
      "warningsAsErrors": true,
      "emitEntryPoint": true,
-     "preserveCompilationContext": true
+     "preserveCompilationContext": true,
+     "debugType": "portable"
   },
   
-  "dependencies": {
+  "dependencies": {    
+    "AspNetCoreConsoleApp.Contracts.Repositories": "1.0.0-*",
+    "AspNetCoreConsoleApp.Contracts.Entities": "1.0.0-*",
     "AspNetCoreConsoleApp.Repositories": "1.0.0-*",
-    "Microsoft.AspNetCore.Diagnostics": "1.0.0-rc2-*",
-    "Microsoft.AspNetCore.Server.Kestrel": "1.0.0-rc2-*",
-    "Microsoft.AspNetCore.Mvc": "1.0.0-rc2-*",
-    "Microsoft.AspNetCore.StaticFiles": "1.0.0-rc2-*"
+    "Microsoft.AspNetCore.Diagnostics": "1.0.0-*",
+    "Microsoft.AspNetCore.Server.Kestrel": "1.0.0-*",
+    "Microsoft.AspNetCore.Mvc": "1.0.0-*",
+    "Microsoft.AspNetCore.StaticFiles": "1.0.0-*",
+    "Microsoft.NETCore.Platforms": "1.0.1-*"
   },
 
   "frameworks": {
-    "dnxcore50": { }
-  },
-  
-  "runtimes":{ 
-    "win10-arm": { },
-    "win10-x64": { }
+    "netcoreapp1.0":{
+       "imports": ["portable-net45+win8+wp8"],
+       "dependencies": { 
+        "Microsoft.NETCore.App": {
+          "type":"platform",
+          "version": "1.0.0-*"
+        }
+       }
+    }
   }
 }

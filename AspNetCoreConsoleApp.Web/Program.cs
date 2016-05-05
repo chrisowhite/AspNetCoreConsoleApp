@@ -11,7 +11,6 @@ namespace AspNetCoreConsoleApp.Web
                 .UseKestrel()
                 .UseUrls("http://*:5000/")
                 .UseContentRoot(Directory.GetCurrentDirectory())
-                .UseEnvironment("Development")
                 .UseStartup<Startup>()
                 .Build();
                 

@@ -1,3 +1,5 @@
+using AspNetCoreConsoleApp.Contracts.Repositories;
+using AspNetCoreConsoleApp.Repositories;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
 

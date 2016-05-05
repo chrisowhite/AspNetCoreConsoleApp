@@ -6,9 +6,9 @@
 			"type": "coreclr",
 			"request": "launch",
 			"preLaunchTask": "build",
-			"program": "${workspaceRoot}/src/AspNetCoreConsoleApp.Web/bin/Debug/netcoreapp1.0/AspNetCoreConsoleApp.dll",
+			"program": "${workspaceRoot}\\AspNetCoreConsoleApp.Web\\bin\\Debug\\netcoreapp1.0\\AspNetCoreConsoleApp.Web.dll",
 			"args": [],
-			"cwd": "${workspaceRoot}/src",
+			"cwd": "${workspaceRoot}\\AspNetCoreConsoleApp.Web",
 			"stopAtEntry": false
 		}
 	]

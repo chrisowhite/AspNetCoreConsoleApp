@@ -4,6 +4,9 @@
 	"version": "0.1.0",
 	"command": "dotnet",
 	"isShellCommand": true,
+	"options": {
+		"cwd": "${workspaceRoot}/AspNetCoreConsoleApp.Web"
+	},
 	"args": [],
 	"tasks": [
 		{
