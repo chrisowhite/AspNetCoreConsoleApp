@@ -40,8 +40,7 @@ namespace AspNetCoreConsoleApp.Web
                     UserId = 1,
                     Username = "cdub",
                     FirstName = "Chris",
-                    LastName = "White",
-                    Password = "password"
+                    LastName = "White"
                 });
                 
                 context.SaveChanges();
