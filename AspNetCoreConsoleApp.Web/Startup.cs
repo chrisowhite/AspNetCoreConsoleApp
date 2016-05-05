@@ -11,7 +11,7 @@ namespace AspNetCoreConsoleApp.Web
     {
         public void ConfigureServices(IServiceCollection services)
         {
-            // Setup in-memory database provider for TestContext. DbContext is dumb, and you HAVE to specify an engine.
+            // Setup in-memory database provider for TestContext. DbContext is dumb, and you HAVE to specify a provider.
             // Mind blown...
             services.AddDbContext<TestContext>(options => {
                options.UseInMemoryDatabase();
